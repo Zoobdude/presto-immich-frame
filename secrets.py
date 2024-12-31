@@ -1,0 +1,4 @@
+WIFI_SSID = ""
+WIFI_PASSWORD = ""
+BASE_URL = ""
+API_KEY = ""

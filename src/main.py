@@ -59,9 +59,7 @@ def main():
     current_asset_counter = 0
     while True:
         print("Fetching asset")
-        asset = connector.get_asset_from_album(
-            "813556ca-3166-40be-8075-4fce01303fe4", current_asset_counter
-        )
+        asset = connector.get_asset_from_album("KEY", current_asset_counter)
 
         print("Downloading asset")
         img = connector.download_asset_to_memory(asset["id"])
@@ -71,7 +69,7 @@ def main():
         display_img_bytes(img)
         current_asset_counter += 1
         presto.update()
-        
+
         time.sleep(5)
 
 
